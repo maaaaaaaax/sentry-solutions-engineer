@@ -42,7 +42,7 @@ max.wiederholt@sentry.io
 
 Hi Ido,
 
-Thanks for reaching out! I've included some screenshots below to help walk you through this process for a Sandbox demo. After playing around in the Sandbox, you should have the 
+Thanks for reaching out! I've included some screenshots below to help walk you through this process for a Sandbox demo. After playing around in the Sandbox, you should be ready to set up your own custom Sentry alerts.
 
 <br>
 
