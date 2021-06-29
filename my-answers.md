@@ -1,7 +1,5 @@
 ## 1. JavaScript: Ignore errors from 3rd party library?
 
-***
-
 <br>
 
 Hi Ido,
@@ -39,8 +37,6 @@ max.wiederholt@sentry.io
 <br>
 
 ## 2.1 Alert when errors spike on Chrome browser?
-
-***
 
 <br>
 
@@ -125,8 +121,6 @@ max.wiederholt@sentry.io
 <br>
 
 ## 2.2 Discover
-
-***
 
 <br>
 
