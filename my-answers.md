@@ -1,41 +1,28 @@
-# JavaScript: Ignore errors from 3rd party library?
+## 1. JavaScript: Ignore errors from 3rd party library?
 
->*Hi, I want to ignore all errors that come from https://somejslibrary.com/somelibrary.js as they are not impacting my application/experience and I can’t do anything about these errors since I don’t control the code/library. Here is my code/setup:*
+***
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Sample Title</title>
-    <script
-    src="https://browser.sentry-cdn.com/6.2.5/bundle.min.js"
-    integrity="sha384-+0tgGyP4idWu9/NA6Jbmnj3SApxIg65/GR1zo3qSieRNyzmmDQ/5a1Yu6mfmUw+v"
-    crossorigin="anonymous"
-    ></script>
-        <script>
-        Sentry.init({
-            dsn: 'https://XXXXXXX@sentry.io/123',
-            release: "1.1"
-        });
-        </script>
+Hi Ido,
 
-        <script src="https://somejslibrary.com/somelibrary.js" crossorigin="anonymous"></script>
+Thanks for reaching out! Sentry's JavaScript client includes an ignoreErrors method, which allows developers to silence errors that are a result of something other than your application, or errors that you’re completely not interested in. ignoreErrors is a list of these messages to be filtered out before being sent to Sentry as either regular expressions or strings. When using strings, they’ll partially match the messages, so if you need to achieve an exact match, use RegExp patterns instead.
 
-        <script>
-        var obj = {};
-        obj.invalidFunction(); // this error should always be reported to Sentry
-        </script>
-    </head>
-    <body>
-        Body text...
-    </body>
-    </html>
+You can read more about ignoreErrors in Sentry's documentation here: https://docs.sentry.io/clients/javascript/config/ 
 
-See the ignoreErrors method explained at https://docs.sentry.io/clients/javascript/config/ 
+(Hint: Ctrl+F > "ignoreErrors" will help you navigate the page quickly.)
 
-Solution: add the following line to the Sentry.init method, as demonstrated in index.html:
+I've taken the liberty of updating the HTML code that you provided to include a working implementation of Sentry's ignoreErrors method, which you can review here: https://github.com/maaaaaaaax/sentry-solutions-engineer/blob/main/1/index.html
 
-ignoreErrors: ["https://somejslibrary.com/somelibrary.js", /.*/],
+If you have any questions about regular expressions, I found the following resources to be helpful:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 https://stackoverflow.com/questions/6711971/regular-expressions-match-anything
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+I hope that helps you! Please let me know if there is anything else I can do to help.
+
+Best,
+
+Max Wiederholt
+
+Solutions Engineer @ Sentry.io  
+max.wiederholt@sentry.io
