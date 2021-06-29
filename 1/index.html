@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Title</title>
+  <script
+  src="https://browser.sentry-cdn.com/6.2.5/bundle.min.js"
+ integrity="sha384-+0tgGyP4idWu9/NA6Jbmnj3SApxIg65/GR1zo3qSieRNyzmmDQ/5a1Yu6mfmUw+v"
+  crossorigin="anonymous"
+></script>
+    <script>
+      Sentry.init({
+        dsn: 'https://XXXXXXX@sentry.io/123',
+        ignoreErrors: ["https://somejslibrary.com/somelibrary.js", /.*/],
+        release: "1.1"
+      });
+    </script>
+
+    <script src="https://somejslibrary.com/somelibrary.js" crossorigin="anonymous"></script>
+
+    <script>
+      var obj = {};
+      obj.invalidFunction(); // this error should always be reported to Sentry
+    </script>
+  </head>
+  <body>
+      Body text...
+  </body>
+</html>
