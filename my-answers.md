@@ -125,3 +125,71 @@ max.wiederholt@sentry.io
 <br>
 
 Hi Ido,
+
+Thank you for your email! I've included some screenshots below to help walk you through this process using a Sentry Sandbox demo. After playing around in the Sandbox, you should be ready to set up your own custom Sentry Discover queries.
+
+<br>
+
+### Step 1.
+Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar:
+
+![Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar. ](./2.1/1.png "Sentry.io user interface")
+
+<br>
+
+### Step 2.
+Select the white "Build a new query" button from the Discover Trends box.
+
+![Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar. ](./2.2/1.png "Sentry.io user interface")
+
+<br>
+
+### Step 3.
+Select your project from the "My Projects" dropdown menu in the top middle navigation bar.
+
+![Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar. ](./2.2/2.png "Sentry.io user interface")
+
+<br>
+
+### Step 4.
+Select your project from the "My Projects" dropdown menu in the top middle navigation bar.
+
+![Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar. ](./2.2/3.png "Sentry.io user interface")
+
+<br>
+
+### Step 5.
+In the search bar under the "All Events" header, type "country" then select geo.country_code: to filter your events by country. Append "geo.country_code:" with your choice of country code. (Eg, "AU", "GB", "US")
+
+![Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar. ](./2.2/4.png "Sentry.io user interface")
+
+<br>
+
+### Step 6.
+In the search bar under the "All Events" header, type "country" then select geo.country_code: to filter your events by country. Append "geo.country_code:" with your choice of country code. (Eg, "AU", "GB", "US")
+
+![Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar. ](./2.2/5.png "Sentry.io user interface")
+
+<br>
+
+### Step 7.
+Add event.type:error to the search bar, then type return. You should see a chart of events, with the count of total events beneath it.
+
+![Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar. ](./2.2/6.png "Sentry.io user interface")
+
+<br>
+
+I hope that helps! Please let me know if there is anything else I can do to help.
+
+Best,
+
+Max Wiederholt
+
+Solutions Engineer @ Sentry.io  
+max.wiederholt@sentry.io
+
+<br>
+<br>
+<br>
+
+***
