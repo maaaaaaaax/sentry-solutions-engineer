@@ -2,6 +2,8 @@
 
 ***
 
+<br>
+
 Hi Ido,
 
 Thanks for reaching out! Sentry's JavaScript client includes an ignoreErrors method, which allows developers to silence errors that are a result of something other than your application, or errors that you’re completely not interested in. ignoreErrors is a list of these messages to be filtered out before being sent to Sentry as either regular expressions or strings. When using strings, they’ll partially match the messages, so if you need to achieve an exact match, use RegExp patterns instead.
@@ -18,7 +20,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expression
 
 https://stackoverflow.com/questions/6711971/regular-expressions-match-anything
 
-I hope that helps you! Please let me know if there is anything else I can do to help.
+I hope that helps! Please let me know if there is anything else I can do to help.
 
 Best,
 
@@ -26,3 +28,106 @@ Max Wiederholt
 
 Solutions Engineer @ Sentry.io  
 max.wiederholt@sentry.io
+
+<br>
+<br>
+<br>
+
+***
+<br>
+<br>
+<br>
+
+## 2.1 Alert when errors spike on Chrome browser?
+
+***
+
+<br>
+
+Hi Ido,
+
+Thanks for reaching out! I've included some screenshots below to help walk you through this process for a Sandbox demo. After playing around in the Sandbox, you should have the 
+
+<br>
+
+### Step 1.
+Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar:
+
+![Visit www.sentry.io/welcome/, and click on the Sandbox button in the top navigation bar. ](./2.1/1.png "Sentry.io user interface")
+
+<br>
+
+### Step 2.
+From the left purple navigation menu, select Alerts. Click on the purple Create Alert Rule button:
+
+![Click on the purple Create Alert Rule button:](./2.1/2.png "Sentry.io user interface")
+
+<br>
+
+### Step 3.
+Select the react project:
+
+![Select the react project:](./2.1/3.png "Sentry.io user interface")
+
+<br>
+
+### Step 4.
+Under the Select Alert column, under Errors, select the radio button labeled "Number of Errors." In the bottom right corner, select the purple button labeled "Set Conditions":
+
+![Under the Select Alert column, under Errors, select the radio button labeled "Number of Errors." In the bottom right corner, select the purple button labeled "Set Conditions":](./2.1/4.png "Sentry.io user interface")
+
+<br>
+
+### Step 5.
+Scroll down until you see the (1) Filter events dropdown menus. Select `event.type:error` and type `browser.name:Chrome`:
+
+![Select event type and browser name:](./2.1/5.png "Sentry.io user interface")
+
+<br>
+
+### Step 6.
+Set your desired thresholds to trigger an alert, and define which actions Sentry should take when these conditions are met:
+
+![Set desired thresholds](./2.1/6.png "Sentry.io user interface")
+
+<br>
+
+### Step 7.
+Name the rule, then click the purple button labeled Save Rule.
+
+![Set desired thresholds](./2.1/7.png "Sentry.io user interface")
+
+<br>
+
+### Voila!
+You've successfully set up a Sentry alert. Your team will now receive an email when your front-end project sees more than 3 error events triggered on a Chrome browser in a 30 minute window.
+
+![Success](./2.1/8.png "Sentry.io user interface")
+
+<br>
+
+I hope that helps! Please let me know if there is anything else I can do to help.
+
+Best,
+
+Max Wiederholt
+
+Solutions Engineer @ Sentry.io  
+max.wiederholt@sentry.io
+
+<br>
+<br>
+<br>
+
+***
+<br>
+<br>
+<br>
+
+## 2.2 Discover
+
+***
+
+<br>
+
+Hi Ido,
