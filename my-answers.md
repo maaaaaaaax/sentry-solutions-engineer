@@ -193,3 +193,55 @@ max.wiederholt@sentry.io
 <br>
 
 ***
+
+<br>
+
+## 3.1 React Project With Sentry Integration > Sentry Error Monitoring with React
+
+<br>
+
+Hi Ido,
+
+Thank you for your email! I just built a sample React project with Sentry integrated, which you can find on Github here: https://github.com/maaaaaaaax/sentry-solutions-engineer/tree/main/3.1/my-app
+
+You'll find the Sentry integration in src/index.js, and you can read Sentry's React documentation here.
+
+Let me know if you have any trouble downloading and running the sample project, or if you have any other questions!
+
+Best,
+
+Max Wiederholt
+
+Solutions Engineer @ Sentry.io  
+max.wiederholt@sentry.io
+
+<br>
+<br>
+<br>
+
+***
+
+<br>
+
+## 3.2 React Project With Sentry Integration > Sentry Performance Monitoring with React
+
+<br>
+
+Hi Ido,
+
+Thank you for your email! I just enabled Sentry performance monitoring on the sample React project I shared with you previously. You can try out the latest version on Github here: https://github.com/maaaaaaaax/sentry-solutions-engineer/tree/main/3.2/my-app
+
+If you get stuck with performance monitoring, I recommend Sentry's documentation here: https://docs.sentry.io/platforms/javascript/guides/react/performance/
+
+Please let me know if you have any trouble downloading and running the sample project, or if you have any other questions. Good luck!
+
+Best,
+
+Max Wiederholt
+
+Solutions Engineer @ Sentry.io  
+max.wiederholt@sentry.io
+
+<br>
+<br>
+<br>
